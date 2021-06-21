@@ -42,10 +42,10 @@ body {
 
 /*==================HEADER======================*/
 .container {
-  width: 1200;
-  padding-left: 20;
-  padding-right: 20;
-  margin: 0, auto;
+  width: 1200px;
+  padding-left: 20px;
+  padding-right: 20px;
+  margin: 0 auto;
 }
 .header-container {
   display: flex;
@@ -60,7 +60,6 @@ body {
   line-height: 1.19;
   letter-spacing: 0.03em;
   margin-right: 93px;
-  margin-left: 115px;
 }
 .logo-link-color {
   color: var(--accent-color);
@@ -72,13 +71,15 @@ body {
 .header {
   padding-top: 24px;
   padding-bottom: 25px;
-  border: 1px solid #ececec;
+  border-bottom: 1px solid #ececec;
 }
 .navigation-item-link {
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
+  padding-top: 10px;
+  padding-bottom: 10px;
 }
 .navigation-item-link:hover,
 .navigation-item-link:focus {
@@ -87,9 +88,11 @@ body {
 .contact-item-link {
   font-weight: 500;
   font-size: 14px;
-  line-height: 1, 14;
+  line-height: 1.14;
   letter-spacing: 0.02em;
   color: var(--secondary-color);
+  padding-bottom: 32px;
+  padding-top: 32px;
 }
 .contact-item-link:hover,
 .contact-item-link:focus {
@@ -108,20 +111,17 @@ body {
 .header-container {
   justify-content: space-between;
 }
-.mail-link {
+.contact-item {
   margin-right: 50px;
 }
-.tel-link {
-  margin-right: 115px;
-}
+
 /*=======================END HEADER==============*/
 
 /*==================HERO SECTION STUDIO=============*/
-.hero-container {
-  display: flex;
-  align-items: center;
+.hero-section {
   background-color: var(--accent-background-color);
-  justify-content: center;
+  padding-top: 200px;
+  padding-bottom: 200px;
 }
 .main-title {
   font-weight: 900;
@@ -132,16 +132,16 @@ body {
   text-transform: uppercase;
   color: var(--help-color);
 }
-
 .main-title {
-  padding-top: 200px;
-  padding-bottom: 30px;
+  margin-bottom: 30px;
 }
-
 .modal-button {
   background: var(--accent-color);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
+}
+.modal-button {
+  display: flex;
 }
 .modal-button {
   font-weight: 700;
@@ -150,8 +150,7 @@ body {
   letter-spacing: 0.06em;
   color: var(--help-color);
   padding: 10px 32px;
-  margin-bottom: 200px;
-  margin-left: 500px;
+  margin: 0 auto;
 }
 .modal-button:hover,
 .modal-button:focus {
@@ -195,13 +194,12 @@ body {
 /*==================ADVENTAGE SECTION STUDIO==============*/
 .adventage-section-container {
   display: flex;
+}
+.adventage-section {
   padding: 94px 0px;
 }
 .adventage-list {
   display: flex;
-  align-items: center;
-  margin-left: 15px;
-  margin-right: 15px;
 }
 .adventage-list-item:not(:last-child) {
   margin-right: 30px;
@@ -212,17 +210,35 @@ body {
   letter-spacing: 0.03em;
   text-transform: uppercase;
 }
+.adventage-list-item {
+  width: 270px;
+}
 .adventage-list-description {
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
   color: var(--secondary-color);
-  padding-top: 10px;
+  margin-top: 10px;
+}
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
 }
 /*=============END ADVENTAGE SECTION STUDIO=============*/
 
 /*============ABOUT US SECTION STUDIO PORTFOLIO===========*/
-
+.about-us-section {
+  padding-bottom: 94px;
+}
 .secondary-title {
   font-size: 36px;
   line-height: 1.17;
@@ -236,7 +252,6 @@ body {
 }
 .about-img-item:not(:last-child) {
   margin-right: 30px;
-  padding-bottom: 94px;
 }
 .about-img-title {
   font-size: 18px;
@@ -294,7 +309,7 @@ body {
   background: #ffffff;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
-  border-radius: 0px 0px 4px 4px;
+  border-radius: 0px 0px 0px 0px;
   text-align: center;
 }
 .team-list-img-description {
@@ -323,7 +338,6 @@ body {
   padding-top: 60px;
   padding-bottom: 60px;
 }
-
 .footer-contact-color {
   color: rgba(255, 255, 255, 0.6);
 }
@@ -344,8 +358,8 @@ body {
 .footer-link-color {
   color: var(--help-color);
 }
-
 .address-link:hover,
 .address-link:focus {
+  color: var (--help-color--);
 }
 /*================END FOOTER STUDIO PORTFOLIO==============*/
