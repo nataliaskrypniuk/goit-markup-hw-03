@@ -43,8 +43,8 @@ body {
 /*==================HEADER======================*/
 .container {
   width: 1200px;
-  padding-left: 20px;
-  padding-right: 20px;
+  padding-left: 15px;
+  padding-right: 15px;
   margin: 0 auto;
 }
 .header-container {
@@ -78,8 +78,8 @@ body {
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
-  padding-top: 10px;
-  padding-bottom: 10px;
+  padding-top: 32px;
+  padding-bottom: 32px;
 }
 .navigation-item-link:hover,
 .navigation-item-link:focus {
@@ -160,11 +160,13 @@ body {
 
 /*================INFORM BUTTON SECTION PORTFOLIO==============*/
 
-.inform-section-container {
+.inform-button-section-container {
   display: flex;
   justify-content: center;
+}
+.inform-button-section {
   padding-top: 100px;
-  padding-bottom: 56px;
+  padding-bottom: 50px;
 }
 .modal-button-list {
   display: flex;
@@ -196,7 +198,7 @@ body {
   display: flex;
 }
 .adventage-section {
-  padding: 94px 0px;
+  padding: 94px 15px;
 }
 .adventage-list {
   display: flex;
@@ -244,7 +246,7 @@ body {
   line-height: 1.17;
   text-align: center;
   letter-spacing: 0.03em;
-  padding-bottom: 50px;
+  margin-bottom: 50px;
 }
 .about-img-list {
   display: flex;
@@ -257,23 +259,22 @@ body {
   font-size: 18px;
   line-height: 2;
   letter-spacing: 0.06em;
-  padding-bottom: 4px;
   background: #ffffff;
-  border-left: 1px solid #eeeeee;
-  border-right: 1px solid #eeeeee;
-  padding-top: 20px;
+
+  margin-bottom: 4px;
 }
 .about-img-description {
   font-size: 16px;
   line-height: 1.87;
   letter-spacing: 0.03em;
   color: var(--secondary-color);
-  padding-bottom: 20px;
   background: #ffffff;
-  border: 1px solid #eeeeee;
-  border-top: 0px;
-  box-sizing: border-box;
 }
+.about-img-item {
+  width: 370px;
+}
+/*===========END ABOUT US SECTION STUDIO ====================*/
+/*================EXAMPLES SECTION==============*/
 .about-img-list-portfolio {
   display: flex;
   justify-content: center;
@@ -282,19 +283,35 @@ body {
 .about-img-item-portfolio {
   margin-right: 30px;
   margin-bottom: 30px;
+  width: 370px;
 }
 
-/*===========END ABOUT US SECTION STUDIO PORTFOLIO==========*/
-
+.about-img-portfolio-text {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  border: 1px solid #eeeeee;
+  border-top: 0px;
+  box-sizing: border-box;
+  padding-left: 24px;
+}
+.examples-section {
+  padding-bottom: 94px;
+}
+/*================EXAMPLES SECTION END==============*/
 /*=================ABOUT US SECTION TEAM====================*/
-
-.secondary-title-team {
+.about-us-section-team {
   padding-top: 94px;
-  padding-bottom: 50px;
+  padding-bottom: 94px;
+}
+.secondary-title-team {
+  margin-bottom: 50px;
 }
 .team-list {
   display: flex;
   justify-content: center;
+}
+.team-list-item {
+  width: 270px;
 }
 .team-list-item:not(:last-child) {
   margin-right: 30px;
@@ -304,31 +321,31 @@ body {
   font-size: 16px;
   line-height: 1.19;
   letter-spacing: 0.03em;
-  padding-top: 30px;
-  padding-bottom: 10px;
   background: #ffffff;
-  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
-    0px 2px 1px rgba(0, 0, 0, 0.2);
-  border-radius: 0px 0px 0px 0px;
+
   text-align: center;
+  margin-bottom: 10px;
 }
 .team-list-img-description {
   font-size: 16px;
   line-height: 1.19;
   letter-spacing: 0.03em;
   color: var(--secondary-color);
-  padding-bottom: 30px;
   background: #ffffff;
-  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
-    0px 2px 1px rgba(0, 0, 0, 0.2);
+
   border-radius: 0px 0px 4px 4px;
   text-align: center;
 }
 .about-us-section-team {
   background: #f5f4fa;
 }
-.team-list-container {
-  padding-bottom: 94px;
+.team-list-img-text {
+  padding-top: 30px;
+  padding-bottom: 30px;
+  background: #ffffff;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
 }
 /*============END ABOUT US SECTION TEAM=====================*/
 
@@ -350,16 +367,20 @@ body {
   margin-left: 115px;
 }
 .address-list-item:not(:last-child) {
-  padding-bottom: 9px;
+  margin-bottom: 9px;
 }
-.address-list {
-  padding-top: 20px;
-}
+
 .footer-link-color {
   color: var(--help-color);
 }
 .address-link:hover,
 .address-link:focus {
   color: var (--help-color--);
+}
+.address {
+  margin-top: 20px;
+}
+.logo-link-color {
+  margin-left: 115px;
 }
 /*================END FOOTER STUDIO PORTFOLIO==============*/
