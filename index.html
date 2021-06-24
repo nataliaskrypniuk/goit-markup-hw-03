@@ -32,42 +32,68 @@
         </nav>
             <ul class="nav-items-list list">
                 <li class="contact-item">
+                    <svg class="contact-icon">
+                        <use href="./images/sprite.svg.svg#icon-mail"></use>
+                    </svg>
                     <a class="contact-item-link mail-link link " href="mailto:info@devstudio.com">info@devstudio.com</a>
                 </li>
                 <li>
+                    <svg class="tel-icon">
+                        <use href="./images/sprite.svg.svg#icon-phone"></use>
+                    </svg>
                     <a class="contact-item-link tel-link link" href="tel:+380961111111">+38 096 111 11 11</a>
                 </li>
             </ul>
         </div>
     </header>
 <main>
-    <div class="container hero-container">
-    <section class="hero-section ">
+    <section class="hero-section">
+        <div class="hero-section-container container">
         <h1 class="main-title">Эффективные решения для вашего бизнеса</h1>
         <button class="modal-button" type="button">Заказать услугу</button>
     </div>
     </section>
 
-    <section class="adventage-section">
-        <div class="adventage-section-container">
-            <h2 hidden>Наши ценности</h2>
+    <section class="adventage-section ">
+        <div class="adventage-section-container container">
+            <h2 class="visually-hidden">Наши ценности</h2>
             <ul class="adventage-list list">
                 <li class="adventage-list-item">
+                    <div class="adventage-icon-link">
+                        <svg class="adventage-icon icon-one">
+                            <use href="./images/sprite.svg.svg#icon-about-us-one"></use>
+                        </svg>
+                    </div>
                     <h3 class="adventage-list-title">Внимание к деталям</h3>
                     <p class="adventage-list-description">Идейные соображения, а также начало повседневной работы по формированию
                         позиции.</p>
                 </li>
                 <li class="adventage-list-item">
+                    <div class="adventage-icon-link">
+                            <svg class="adventage-icon icon-two">
+                                <use href="./images/sprite.svg.svg#icon-about-us-two"></use>
+                            </svg>
+                    </div>
                     <h3 class="adventage-list-title">Пунктуальность</h3>
                     <p class="adventage-list-description">Задача организации, в особенности же рамки и место обучения кадров влечет
                         за собой.</p>
                 </li>
                 <li class="adventage-list-item">
+                    <div class="adventage-icon-link">
+                        <svg class="adventage-icon icon-three">
+                            <use href="./images/sprite.svg.svg#icon-about-us-three"></use>
+                        </svg>
+                    </div>
                     <h3 class="adventage-list-title">Планирование</h3>
                     <p class="adventage-list-description">Равным образом консультация с широким активом в значительной степени
                         обуславливает.</p>
                 </li>
                 <li class="adventage-list-item">
+                    <div class="adventage-icon-link">
+                        <svg class="adventage-icon icon-four">
+                            <use href="./images/sprite.svg.svg#icon-about-us-four"></use>
+                        </svg>
+                    </div>
                     <h3 class="adventage-list-title">Современные технологии</h3>
                     <p class="adventage-list-description">Значимость этих проблем настолько очевидна, что реализация плановых
                         заданий.</p>
@@ -78,6 +104,7 @@
         
     </section>
     <section class="about-us-section">
+        <div class="container">
         <h2 class="secondary-title">Чем мы занимаемся</h2>
         <ul class="about-img-list list">
             <li class="about-img-item">
@@ -90,46 +117,56 @@
                 <img class="about-img" src="./images/galery/box3.jpg" alt="планшет в руках у человека" width="370" height="294">
             </li>
         </ul>
+        </div>
     </section>
-    <section class="about-us-section-team">
-        <div class="team-list-container">
+    <section class="about-us-section-team ">
+        <div class="team-list-container container">
         <h2 class="secondary-title secondary-title-team">Наша команда</h2>
         <ul class="team-list list">
             <li class="team-list-item">
                 <img class="team-list-item-img" src="./images/profesionals/igor.jpg" alt="мужчина в очках" width="270" height="260">
-                <h3 class="team-list-img-title">Игорь Демьяненко </h3>
-                <p class="team-list-img-description" lang="en">Product Designer</p>
+                 <div class="team-list-img-text">
+                     <h3 class="team-list-img-title">Игорь Демьяненко </h3>
+                     <p class="team-list-img-description" lang="en">Product Designer</p>
+                </div>
             </li>
            
                 <li class="team-list-item">
                     <img class="team-list-item-img" src="./images/profesionals/olga.jpg" alt="женщина в очках улыбается" width="270"
                         height="260">
-                    <h3 class="team-list-img-title">Ольга Репина</h3>
-                    <p class="team-list-img-description" lang="en">Frontend Developer</p>
-                </li>
+                    <div class="team-list-img-text">
+                        <h3 class="team-list-img-title">Ольга Репина</h3>
+                        <p class="team-list-img-description" lang="en">Frontend Developer</p>
+                    </div>
+            </li>
                 
                 <li class="team-list-item">
                     <img class="team-list-item-img" src="./images/profesionals/nikolai.jpg" alt="мужчина смотрит в сторону" width="270"
                         height="260">
-                    <h3 class="team-list-img-title">Николай Тарасов</h3>
-                    <p class="team-list-img-description" lang="en">Marketing</p>
-                </li>
+                    <div class="team-list-img-text">
+                        <h3 class="team-list-img-title">Николай Тарасов</h3>
+                        <p class="team-list-img-description" lang="en">Marketing</p>
+                    </div>
+            </li>
                 
                 <li class="team-list-item">
                     <img class="team-list-item-img" src="./images/profesionals/mikhail.jpg" alt="мужчина в очках" width="270"
                         height="260">
-                    <h3 class="team-list-img-title">Михаил Ермаков </h3>
-                    <p class="team-list-img-description" lang="en">UI Designer</p>
+                    <div class="team-list-img-text">
+                        <h3 class="team-list-img-title">Михаил Ермаков </h3>
+                        <p class="team-list-img-description" lang="en">UI Designer</p>
+                    </div>
                 </li>
             </div>    
             
         </ul>
     </section>
 </main>
-    <footer class="footer container">
-        <a class="logo-link link  footer-link-color" href="index.html"><span class="logo-link-color">Web</span>Studio</a>
-         <address class="address">
-            <ul class="address-list list">
+    <footer class="footer ">
+        <div class="container">
+          <a class="logo-link link  footer-link-color" href="index.html"><span class="logo-link-color">Web</span>Studio</a>
+            <address class="address">
+              <ul class="address-list list">
                 <li class="address-list-item">
                     <a class="address-link link footer-link-color" href="https://goo.gl/maps/LSZVR5Nw7ut3KPeD9" target="_blank" rel="noopener noreferrer">г. Киев, пр-т Леси
                         Украинки, 26</a>
@@ -140,9 +177,9 @@
                 <li class="address-list-item">
                     <a class="address-link link footer-contact-color" href="tel:+380991111111">+38 099 111 11 11</a>
                 </li>
-            </ul>
-         </address>
-            
+              </ul>
+            </address>
+        </div>
     </footer>
 
     
