@@ -491,8 +491,17 @@ body {
 /*==================FOOTER STUDIO PORTFOLIO===============*/
 .footer {
   background: var(--accent-background-color);
+}
+.footer-inform {
   padding-top: 60px;
   padding-bottom: 60px;
+}
+
+.footer-contacts {
+  display: flex;
+}
+.footer-inform {
+  margin-right: 70px;
 }
 .footer-contact-color {
   color: rgba(255, 255, 255, 0.6);
@@ -518,5 +527,44 @@ body {
 .address {
   margin-top: 20px;
 }
-
+.footer-title {
+  padding-top: 72px;
+}
+.footer-title {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--help-color);
+}
+.social-link-list-footer {
+  display: flex;
+}
+.social-link-item-footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.social-link-item-footer {
+  margin-top: 20px;
+  width: 44px;
+  height: 44px;
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 50%;
+}
+.social-link-item-footer:not(:last-child) {
+  margin-right: 10px;
+}
+.social-link-item-footer:hover,
+.social-link-item-footer:focus {
+  background-color: var(--accent-color);
+}
+.social-icon-footer {
+  width: 20px;
+  height: 20px;
+  fill: var(--help-color);
+}
 /*================END FOOTER STUDIO PORTFOLIO==============*/
