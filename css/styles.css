@@ -194,12 +194,13 @@ body {
   justify-content: center;
 }
 .inform-button-section {
-  padding-top: 100px;
-  padding-bottom: 50px;
+  padding-top: 94px;
+  padding-bottom: 94px;
 }
 .modal-button-list {
   display: flex;
-  align-items: center;
+  justify-content: center;
+  margin-bottom: 50px;
 }
 .modal-button-item {
   border-radius: 4px;
@@ -209,16 +210,45 @@ body {
   font-size: 16px;
   line-height: 1.62px;
   letter-spacing: 0.03em;
+}
+.modal-button-item:not(:last-child) {
   margin-right: 8px;
 }
 .button {
   background: #f5f4fa;
+  padding-top: 6px;
+  padding-bottom: 6px;
+  padding-left: 22px;
+  padding-right: 22px;
 }
 .button:hover,
 .button:focus {
   background: var(--accent-color);
   color: var(--help-color);
   cursor: pointer;
+}
+.about-img-list-portfolio {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.about-img-list-portfolio {
+  margin-right: -30px;
+  margin-bottom: -30px;
+}
+.about-img-item-portfolio {
+  margin-right: 30px;
+  margin-bottom: 30px;
+  width: 370px;
+}
+.about-img-portfolio-text {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  border: 1px solid #eeeeee;
+  border-top: 0px;
+  box-sizing: border-box;
+  padding-left: 24px;
+  padding-right: 24px;
 }
 /*============END INFORM BUTTON SECTION PORTFOLIO=========*/
 
@@ -338,30 +368,7 @@ body {
   width: 370px;
 }
 /*===========END ABOUT US SECTION STUDIO ====================*/
-/*================EXAMPLES SECTION==============*/
-.about-img-list-portfolio {
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-}
-.about-img-item-portfolio {
-  margin-right: 30px;
-  margin-bottom: 30px;
-  width: 370px;
-}
 
-.about-img-portfolio-text {
-  padding-top: 20px;
-  padding-bottom: 20px;
-  border: 1px solid #eeeeee;
-  border-top: 0px;
-  box-sizing: border-box;
-  padding-left: 24px;
-}
-.examples-section {
-  padding-bottom: 94px;
-}
-/*================EXAMPLES SECTION END==============*/
 /*=================ABOUT US SECTION TEAM====================*/
 .about-us-section-team {
   padding-top: 94px;
@@ -386,7 +393,6 @@ body {
   line-height: 1.19;
   letter-spacing: 0.03em;
   background: #ffffff;
-
   text-align: center;
   margin-bottom: 10px;
 }
@@ -405,13 +411,82 @@ body {
 }
 .team-list-img-text {
   padding-top: 30px;
-  padding-bottom: 30px;
   background: #ffffff;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
 }
+.social-link-list {
+  display: flex;
+}
+.social-link-list {
+  padding-left: 32px;
+  padding-right: 32px;
+  padding-bottom: 30px;
+  margin-top: 16px;
+}
+.social-link-icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.social-link-icon {
+  width: 44px;
+  height: 44px;
+  background-color: var(--help-color);
+  border-radius: 50%;
+  margin-right: 10px;
+}
+.social-link-icon:hover,
+.social-link-icon:focus {
+  background-color: var(--accent-color);
+}
+.social-icon {
+  width: 20px;
+  height: 20px;
+  fill: var(--secondary-color);
+}
+.social-link-icon:hover .social-icon,
+.social-link-icon:focus .social-icon {
+  fill: var(--help-color);
+}
+
 /*============END ABOUT US SECTION TEAM=====================*/
+/*==================CLIENTS STUDIO========================*/
+.our-clients {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+.client-list {
+  display: flex;
+  justify-content: center;
+}
+.client-icon-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 30px;
+}
+.client-icon-link {
+  width: 170px;
+  height: 92px;
+  border: 1px solid #afb1b8;
+  box-sizing: border-box;
+  border-radius: 4px;
+}
+.client-icon {
+  padding-top: 16px;
+  padding-bottom: 16px;
+  padding-left: 32px;
+  padding-right: 32px;
+  fill: var(--secondary-color);
+}
+.client-icon:hover,
+.client-icon:focus {
+  fill: var(--accent-color);
+}
+
+/*==================CLIENTS STUDIO END========================*/
 
 /*==================FOOTER STUDIO PORTFOLIO===============*/
 .footer {
@@ -428,7 +503,6 @@ body {
   line-height: 1.71;
   letter-spacing: 0.03em;
   color: var(--main-color);
-  margin-left: 115px;
 }
 .address-list-item:not(:last-child) {
   margin-bottom: 9px;
@@ -444,7 +518,5 @@ body {
 .address {
   margin-top: 20px;
 }
-.logo-link-color {
-  margin-left: 115px;
-}
+
 /*================END FOOTER STUDIO PORTFOLIO==============*/
